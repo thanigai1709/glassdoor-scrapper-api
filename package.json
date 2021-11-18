@@ -1,0 +1,18 @@
+{
+  "name": "glassdoor-scrapper-api",
+  "version": "1.0.0",
+  "description": "scrapper functions to retrive rating info from glassdoor page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Thanigai",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1",
+    "puppeteer": "^11.0.0"
+  }
+}
