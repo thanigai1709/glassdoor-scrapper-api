@@ -5,7 +5,7 @@ const targetUrl =
 
 const express = require('express')
 const app = express()
-
+const PORT = process.env.PORT || 3000
 app.get('/', async function (req, res) {
   axios
     .get(targetUrl)
@@ -26,6 +26,6 @@ app.get('/', async function (req, res) {
     })
 })
 
-app.listen(3000, () => {
-  console.log('Scrapper runs on PORT 3000')
+app.listen(PORT, () => {
+  console.log(`Scrapper running on PORT ${PORT}`);
 })
