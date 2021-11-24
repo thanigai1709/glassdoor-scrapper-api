@@ -19,6 +19,7 @@ app.get('/', async function (req, res) {
       const rating = $(
         '#EmpStats .v2__EIReviewsRatingsStylesV2__ratingNum',
       ).html()
+      console.log("console added");
       res.send({companyDetails, rating, ratingHTML, overalReview })
     })
     .catch((err) => {
