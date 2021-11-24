@@ -1,7 +1,7 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
 const targetUrl =
-  'https://www.glassdoor.co.in/Reviews/Sedin-Technologies-Reviews-E382372.htm'
+  'https://www.glassdoor.co.in/Reviews/Excrin-Think-Labs-Chennai-Reviews-EI_IE1971807.0,17_IL.18,25_IM1067.htm'
 
 const express = require('express')
 const app = express()
@@ -19,6 +19,7 @@ app.get('/', async function (req, res) {
       const rating = $(
         '#EmpStats .v2__EIReviewsRatingsStylesV2__ratingNum',
       ).html()
+      console.log("console added");
       res.send({companyDetails, rating, ratingHTML, overalReview })
     })
     .catch((err) => {
